@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		384F96B72DB2145000CF2E78 /* DataStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384F96B62DB2145000CF2E78 /* DataStructure.swift */; };
+		384F96B92DB2147100CF2E78 /* RepositoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384F96B82DB2147100CF2E78 /* RepositoryCell.swift */; };
+		384F96BB2DB2149400CF2E78 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384F96BA2DB2149400CF2E78 /* DetailViewController.swift */; };
 		389932B72DB0E4BE006155B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389932B62DB0E4BE006155B3 /* AppDelegate.swift */; };
 		389932B92DB0E4BE006155B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389932B82DB0E4BE006155B3 /* SceneDelegate.swift */; };
 		389932BB2DB0E4BE006155B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389932BA2DB0E4BE006155B3 /* ViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		384F96B62DB2145000CF2E78 /* DataStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStructure.swift; sourceTree = "<group>"; };
+		384F96B82DB2147100CF2E78 /* RepositoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryCell.swift; sourceTree = "<group>"; };
+		384F96BA2DB2149400CF2E78 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		389932B32DB0E4BE006155B3 /* 卓建佑_果思作業.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "卓建佑_果思作業.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		389932B62DB0E4BE006155B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		389932B82DB0E4BE006155B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +65,9 @@
 				389932B62DB0E4BE006155B3 /* AppDelegate.swift */,
 				389932B82DB0E4BE006155B3 /* SceneDelegate.swift */,
 				389932BA2DB0E4BE006155B3 /* ViewController.swift */,
+				384F96BA2DB2149400CF2E78 /* DetailViewController.swift */,
+				384F96B82DB2147100CF2E78 /* RepositoryCell.swift */,
+				384F96B62DB2145000CF2E78 /* DataStructure.swift */,
 				389932BC2DB0E4BE006155B3 /* Main.storyboard */,
 				389932BF2DB0E4BF006155B3 /* Assets.xcassets */,
 				389932C12DB0E4BF006155B3 /* LaunchScreen.storyboard */,
@@ -103,7 +112,7 @@
 				};
 			};
 			buildConfigurationList = 389932AE2DB0E4BE006155B3 /* Build configuration list for PBXProject "卓建佑_果思作業" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -139,8 +148,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				389932BB2DB0E4BE006155B3 /* ViewController.swift in Sources */,
+				384F96B72DB2145000CF2E78 /* DataStructure.swift in Sources */,
+				384F96B92DB2147100CF2E78 /* RepositoryCell.swift in Sources */,
 				389932B72DB0E4BE006155B3 /* AppDelegate.swift in Sources */,
 				389932B92DB0E4BE006155B3 /* SceneDelegate.swift in Sources */,
+				384F96BB2DB2149400CF2E78 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,11 +307,13 @@
 				DEVELOPMENT_TEAM = 9UPDTG2HVG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "卓建佑_果思作業/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "卓建佑_果思作業";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,11 +337,13 @@
 				DEVELOPMENT_TEAM = 9UPDTG2HVG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "卓建佑_果思作業/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "卓建佑_果思作業";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
